@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://AustieBostKittenKlub.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://ennobled.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://HUD.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+outline_size = 6
+outline_color = Color( 0.294118, 0.0470588, 0.376471, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+outline_size = 5
+outline_color = Color( 0.294118, 0.0470588, 0.376471, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 70
+outline_size = 5
+outline_color = Color( 0.294118, 0.0470588, 0.376471, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="InputEventAction" id=4]
+action = "start_game"
+
+[sub_resource type="ShortCut" id=5]
+shortcut = SubResource( 4 )
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="LblScore" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -22.5
+margin_right = 22.5
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 1 )
+text = "0"
+
+[node name="LblMessage" type="Label" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.0
+margin_bottom = 12.0
+custom_fonts/font = SubResource( 2 )
+text = "Was will die Zaza?"
+align = 1
+autowrap = true
+
+[node name="BtnStart" type="Button" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -108.0
+custom_fonts/font = SubResource( 3 )
+shortcut = SubResource( 5 )
+text = "wuff wuff wuff"
+
+[node name="TimerMessage" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="pressed" from="BtnStart" to="." method="_on_BtnStart_pressed"]
+[connection signal="timeout" from="TimerMessage" to="." method="_on_TimerMessage_timeout"]

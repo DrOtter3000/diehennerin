@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/apple_bite.ogg-464c59b9d9a0a7c04fd1858283d8de85.oggstr"
+
+[deps]
+
+source_file="res://apple_bite.ogg"
+dest_files=[ "res://.import/apple_bite.ogg-464c59b9d9a0a7c04fd1858283d8de85.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

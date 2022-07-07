@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Puke.ogg-8791f16f48307773c8fde1887b9ff609.oggstr"
+
+[deps]
+
+source_file="res://Puke.ogg"
+dest_files=[ "res://.import/Puke.ogg-8791f16f48307773c8fde1887b9ff609.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

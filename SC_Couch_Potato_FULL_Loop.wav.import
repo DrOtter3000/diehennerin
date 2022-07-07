@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SC_Couch_Potato_FULL_Loop.wav-57521edf6d128a587013414a7fd70264.sample"
+
+[deps]
+
+source_file="res://SC_Couch_Potato_FULL_Loop.wav"
+dest_files=[ "res://.import/SC_Couch_Potato_FULL_Loop.wav-57521edf6d128a587013414a7fd70264.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
